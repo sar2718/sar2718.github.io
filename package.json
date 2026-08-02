@@ -1,0 +1,10 @@
+{
+  "name": "eduard-sultanov-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static bilingual portfolio for Eduard Sultanov",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "check": "node --check script.js && node --check scripts/serve.mjs && node --check scripts/check-site.mjs && node scripts/check-site.mjs"
+  }
+}
