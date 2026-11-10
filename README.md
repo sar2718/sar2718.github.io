@@ -1,8 +1,10 @@
 # Eduard Sultanov — Portfolio
 
-Personal portfolio website for a backend developer focused on Go, Python, C, data pipelines and practical engineering.
+Personal portfolio website for a backend developer focused on Go, Python, Linux and automation.
 
 Live site: [sar2718.github.io](https://sar2718.github.io)
+
+Content changes and factual sources: [content review](CONTENT_AUDIT.md).
 
 ## Features
 

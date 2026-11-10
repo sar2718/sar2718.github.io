@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio of Eduard Sultanov, a backend developer focused on Go, Python, data pipelines and reliable backend systems."
+      content="Portfolio of Eduard Sultanov, a backend developer focused on Go, Python, Linux and automation."
     />
     <meta name="author" content="Eduard Sultanov" />
     <meta name="theme-color" content="#080d12" />
@@ -21,7 +21,7 @@
     <meta property="og:title" content="Eduard Sultanov — Backend Developer" />
     <meta
       property="og:description"
-      content="Go, Python and C. Backend systems, data pipelines and practical engineering."
+      content="Go, Python and C. Backend development, Linux and automation."
     />
     <meta property="og:locale" content="en_US" />
     <meta property="og:image" content="https://sar2718.github.io/assets/og-portfolio-v2.jpg" />
@@ -34,7 +34,7 @@
     <meta name="twitter:title" content="Eduard Sultanov — Backend Developer" />
     <meta
       name="twitter:description"
-      content="Go, Python and C. Backend systems, data pipelines and practical engineering."
+      content="Go, Python and C. Backend development, Linux and automation."
     />
     <meta name="twitter:image" content="https://sar2718.github.io/assets/og-portfolio-v2.jpg" />
     <meta name="twitter:image:alt" content="Eduard Sultanov — Backend Developer — Go, Python, C" />
@@ -51,7 +51,7 @@
           "https://t.me/sar2718"
         ],
         "jobTitle": "Backend Developer",
-        "knowsAbout": ["Go", "Python", "C", "SQL", "Backend Development", "Data Engineering"]
+        "knowsAbout": ["Go", "Python", "C", "SQL", "Backend Development", "Linux", "Automation", "Data Engineering"]
       }
     </script>
   </head>
@@ -64,10 +64,10 @@
 
     <header class="site-header">
       <div class="header-inner shell">
-        <a class="brand" href="#top" aria-label="Eduard Sultanov — home">
+        <a class="brand" href="#top" aria-label="Eduard Sultanov — back to top">
           <span class="brand-mark">ES</span>
           <span class="brand-copy">
-            <strong>Eduard Sultanov</strong>
+            <strong data-i18n="heroIdentity">Eduard Sultanov</strong>
             <span data-i18n="brandRole">Backend Developer</span>
           </span>
         </a>
@@ -102,10 +102,10 @@
     <main id="main" tabindex="-1">
       <section class="hero shell" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span><span data-i18n="focusLine">Go · Python · C</span></p>
-          <h1 id="hero-title" data-i18n="heroTitle">Backend systems & data.</h1>
+          <p class="eyebrow"><span class="status-dot"></span><span data-i18n="heroIdentity">Eduard Sultanov</span></p>
+          <h1 id="hero-title"><span data-i18n="heroBackend">Backend.</span><span>Linux.</span><span class="hero-title-accent" data-i18n="heroAutomation">Automation.</span></h1>
           <p class="hero-lead" data-i18n="heroLead">
-            I am building my backend specialization around Go. I use Python and C for data processing and systems work.
+            Backend development in Go is my main focus. I also work with Linux and write scripts to automate everyday tasks.
           </p>
 
           <div class="hero-actions">
@@ -121,57 +121,75 @@
 
         </div>
 
-        <aside class="terminal-card" aria-label="Developer profile summary">
+        <aside class="terminal-card" aria-label="Featured project: Cian Parser">
           <div class="terminal-bar">
             <div class="terminal-dots" aria-hidden="true"><span></span><span></span><span></span></div>
-            <span>backend.go</span>
+            <span>cian_parser</span>
           </div>
-          <pre><code><span class="code-keyword">package</span> portfolio
-
-<span class="code-keyword">type</span> Developer <span class="code-keyword">struct</span> {
-  Name      <span class="code-type">string</span>
-  Stack     []<span class="code-type">string</span>
-  Focus     <span class="code-type">string</span>
-}
-
-<span class="code-keyword">var</span> eduard = Developer{
-  Name: <span class="code-string">"Eduard Sultanov"</span>,
-  Stack: []<span class="code-type">string</span>{<span class="code-string">"Go"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"C"</span>},
-  Focus: <span class="code-string">"backend & data systems"</span>,
-}</code></pre>
+          <div class="featured-project">
+            <div class="featured-intro">
+              <p class="featured-label" data-i18n="featuredLabel">Inside the project</p>
+              <h2><a href="#project-cian">Cian Parser <span aria-hidden="true">↘</span></a></h2>
+              <p class="featured-summary" data-i18n="featuredSummary">From property listings to a map: collecting, storing and visualizing data.</p>
+            </div>
+            <ol class="pipeline-list">
+              <li><span class="pipeline-number" aria-hidden="true">01</span><strong data-i18n="pipelineCollect">Collect</strong><span>Python</span></li>
+              <li><span class="pipeline-number" aria-hidden="true">02</span><strong data-i18n="pipelineClassify">Classify</strong><span data-i18n="pipelineProcessing">Data processing</span></li>
+              <li><span class="pipeline-number" aria-hidden="true">03</span><strong data-i18n="pipelineStore">Store</strong><span>ClickHouse</span></li>
+              <li><span class="pipeline-number" aria-hidden="true">04</span><strong data-i18n="pipelineMap">Map</strong><span>H3</span></li>
+            </ol>
+          </div>
           <div class="terminal-footer">
-            <span><span class="terminal-pulse"></span>Moscow · UTC+3</span>
-            <a href="https://github.com/sar2718" target="_blank" rel="noopener noreferrer">github.com/sar2718 ↗</a>
+            <span>Python · ClickHouse · H3</span>
+            <a href="https://github.com/sar2718/cian_parser" target="_blank" rel="noopener noreferrer" aria-label="Cian Parser — source code" data-i18n-aria-label="cianSourceLabel"><span data-i18n="sourceCode">Source code</span> ↗</a>
           </div>
         </aside>
+
+        <div class="hero-work" role="group" aria-label="Explore selected projects" data-i18n-aria-label="workPreviewAria">
+          <a class="work-preview" href="#project-transcription">
+            <span class="work-preview-label" data-i18n="previewTranscription">Audio · Android</span>
+            <strong><span data-i18n="transcriptionTitle">AI Transcription</span><span aria-hidden="true">↘</span></strong>
+            <span data-i18n="previewTranscriptionText">On-device speech recognition</span>
+          </a>
+          <a class="work-preview" href="#project-warp">
+            <span class="work-preview-label" data-i18n="projectAutomation">Linux automation</span>
+            <strong>WARP Amnezia Manager <span aria-hidden="true">↘</span></strong>
+            <span data-i18n="previewWarpText">Configuration and access management</span>
+          </a>
+          <a class="work-preview" href="#project-raman">
+            <span class="work-preview-label" data-i18n="previewRaman">3rd place · Nuclear IT Hack 2026</span>
+            <strong>Raman Spectroscopy <span aria-hidden="true">↘</span></strong>
+            <span data-i18n="previewRamanText">Spectral analysis and classification</span>
+          </a>
+        </div>
       </section>
 
       <section class="section shell" id="about" aria-labelledby="about-title">
         <div class="section-heading reveal">
           <p class="section-index">01 / <span data-i18n="aboutLabel">About</span></p>
-          <h2 id="about-title" data-i18n="aboutTitle">Engineering through practice</h2>
+          <h2 id="about-title" data-i18n="aboutTitle">How I work</h2>
         </div>
 
         <div class="about-grid">
           <div class="about-copy reveal">
-            <p data-i18n="aboutP1">I work at the intersection of backend development and data engineering: services, collection pipelines, classification and visualization.</p>
+            <p data-i18n="aboutP1">I use Python for data processing, C for systems programming and Bash for automation. I value clear architecture and code that is easy to understand and maintain.</p>
             <p data-i18n="aboutP2">
-              My current projects combine backend logic, data collection, classification and visualization. I value clear architecture, measurable results and code that can grow beyond a prototype.
+              My portfolio includes data pipelines, Linux tools and team projects from hackathons: audio transcription, spectral analysis and interactive maps.
             </p>
           </div>
 
           <div class="facts-grid reveal reveal-delay">
             <div class="fact-card">
-              <strong>3rd</strong>
-              <span data-i18n="factHackathon">Nuclear IT Hack 2026</span>
+              <strong data-i18n="factPlace">3rd place</strong>
+              <span data-i18n="factHackathon">Nuclear IT Hack 2026 · Raman</span>
             </div>
             <div class="fact-card">
-              <strong>4</strong>
-              <span data-i18n="factProjects">featured projects</span>
+              <strong>6</strong>
+              <span data-i18n="factProjects">selected projects</span>
             </div>
             <div class="fact-card">
               <strong>Go</strong>
-              <span data-i18n="factDirection">current backend specialization</span>
+              <span data-i18n="factDirection">main backend language</span>
             </div>
             <div class="fact-card">
               <strong>RU / EN</strong>
@@ -184,23 +202,23 @@
       <section class="section shell" id="skills" aria-labelledby="skills-title">
         <div class="section-heading reveal">
           <p class="section-index">02 / <span data-i18n="skillsLabel">Skills</span></p>
-          <h2 id="skills-title" data-i18n="skillsTitle">Tools I use to ship working systems</h2>
+          <h2 id="skills-title" data-i18n="skillsTitle">Languages and tools</h2>
         </div>
 
         <div class="skill-groups">
           <article class="skill-card reveal">
             <div class="skill-number">01</div>
             <h3 data-i18n="skillBackendTitle">Backend</h3>
-            <p data-i18n="skillBackendText">Building a strong foundation for services, APIs and concurrent systems.</p>
+            <p data-i18n="skillBackendText">Building my skills in service development, API design and testing.</p>
             <ul class="chip-list">
-              <li>Go</li><li>Python</li><li>REST APIs</li><li>Concurrency</li><li>Testing</li>
+              <li>Go</li><li>Python</li><li data-i18n="restApis">REST APIs</li><li data-i18n="concurrency">Concurrency</li><li data-i18n="testing">Testing</li>
             </ul>
           </article>
 
           <article class="skill-card reveal reveal-delay">
             <div class="skill-number">02</div>
-            <h3 data-i18n="skillDataTitle">Data & systems</h3>
-            <p data-i18n="skillDataText">Collecting, transforming, classifying and storing real-world data.</p>
+            <h3 data-i18n="skillDataTitle">Data processing</h3>
+            <p data-i18n="skillDataText">Collecting, preparing and storing data for analysis.</p>
             <ul class="chip-list">
               <li>C</li><li>SQL</li><li>ClickHouse</li><li>H3</li><li>Requests</li><li>BeautifulSoup</li>
             </ul>
@@ -208,10 +226,10 @@
 
           <article class="skill-card reveal reveal-delay-two">
             <div class="skill-number">03</div>
-            <h3 data-i18n="skillToolsTitle">Engineering tools</h3>
-            <p data-i18n="skillToolsText">A practical environment for development, delivery and collaboration.</p>
+            <h3 data-i18n="skillToolsTitle">Linux &amp; automation</h3>
+            <p data-i18n="skillToolsText">Using Linux, Bash and Git for everyday development and automation.</p>
             <ul class="chip-list">
-              <li>Docker</li><li>Linux</li><li>Git</li><li>GitHub</li><li>Code Review</li>
+              <li>Linux</li><li>Bash</li><li>Docker</li><li>Git</li><li>GitHub</li><li data-i18n="codeReview">Code review</li>
             </ul>
           </article>
         </div>
@@ -221,7 +239,7 @@
         <div class="section-heading section-heading-row reveal">
           <div>
             <p class="section-index">03 / <span data-i18n="projectsLabel">Projects</span></p>
-            <h2 id="projects-title" data-i18n="projectsTitle">Selected work</h2>
+            <h2 id="projects-title" data-i18n="projectsTitle">Selected projects</h2>
           </div>
           <a class="text-link" href="https://github.com/sar2718?tab=repositories" target="_blank" rel="noopener noreferrer">
             <span data-i18n="allRepositories">All repositories</span> ↗
@@ -229,7 +247,7 @@
         </div>
 
         <div class="projects-grid">
-          <article class="project-card project-featured reveal">
+          <article class="project-card project-featured reveal" id="project-cian">
             <div class="project-topline">
               <span class="project-kind" data-i18n="projectDataPipeline">Data pipeline</span>
               <span>01</span>
@@ -237,10 +255,10 @@
             <div>
               <h3>Cian Parser</h3>
               <p data-i18n="cianDescription">
-                A pipeline for collecting, classifying, storing and visualizing real-estate listings with geospatial processing.
+                A data pipeline that collects and classifies property listings, stores them in ClickHouse and maps them using H3.
               </p>
             </div>
-            <ul class="project-stack"><li>Python</li><li>ClickHouse</li><li>H3</li><li>Web scraping</li></ul>
+            <ul class="project-stack"><li>Python</li><li>ClickHouse</li><li>H3</li><li data-i18n="webScraping">Web scraping</li></ul>
             <a class="project-link" href="https://github.com/sar2718/cian_parser" target="_blank" rel="noopener noreferrer" aria-label="Cian Parser — source code" data-i18n-aria-label="cianSourceLabel">
               <span data-i18n="sourceCode">Source code</span> <span aria-hidden="true">↗</span>
             </a>
@@ -248,13 +266,13 @@
 
           <article class="project-card reveal reveal-delay">
             <div class="project-topline">
-              <span class="project-kind" data-i18n="projectProduct">Product frontend</span>
+              <span class="project-kind" data-i18n="projectProduct">Frontend prototype</span>
               <span>02</span>
             </div>
             <div>
               <h3>Interviewer OS</h3>
               <p data-i18n="interviewerDescription">
-                A technical interview platform with complete candidate and administrator workflows, local persistence and bilingual UI.
+                A frontend prototype for technical interviews, with candidate and admin views, data stored in the browser and support for English and Russian.
               </p>
             </div>
             <ul class="project-stack"><li>TypeScript</li><li>React</li><li>Vite</li></ul>
@@ -263,7 +281,7 @@
             </a>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-card reveal" id="project-raman">
             <div class="project-topline">
               <span class="project-kind" data-i18n="projectML">Data analysis</span>
               <span>03</span>
@@ -271,10 +289,10 @@
             <div>
               <h3>Raman Spectroscopy</h3>
               <p data-i18n="ramanDescription">
-                Raman spectra analysis and biological sample classification. The project took 3rd place at Nuclear IT Hack 2026.
+                A team project to analyze Raman spectra and classify biological samples. Third place at Nuclear IT Hack 2026.
               </p>
             </div>
-            <ul class="project-stack"><li>Python</li><li>Data analysis</li><li>ML</li></ul>
+            <ul class="project-stack"><li>Python</li><li data-i18n="dataAnalysis">Data analysis</li><li>ML</li></ul>
             <a class="project-link" href="https://github.com/yulia-pecheykina/raman_spectroscopy" target="_blank" rel="noopener noreferrer" aria-label="Raman Spectroscopy — source code" data-i18n-aria-label="ramanSourceLabel">
               <span data-i18n="sourceCode">Source code</span> <span aria-hidden="true">↗</span>
             </a>
@@ -286,13 +304,47 @@
               <span>04</span>
             </div>
             <div>
-              <h3>Urban Ads Map</h3>
+              <h3>Russ Control Dashboard</h3>
               <p data-i18n="urbanDescription">
-                An interactive map of advertising surfaces and public IP cameras built during the RVB × MEPhI hackathon.
+                A map of outdoor advertising displays and public IP cameras, with estimates of camera coverage. Built at RWB × MEPhI 2026.
               </p>
             </div>
-            <ul class="project-stack"><li>JavaScript</li><li>Maps</li><li>Data processing</li></ul>
-            <a class="project-link" href="https://github.com/sar2718/russ-tech-hackathon-map" target="_blank" rel="noopener noreferrer" aria-label="Urban Ads Map — source code" data-i18n-aria-label="urbanSourceLabel">
+            <ul class="project-stack"><li>Python</li><li>Pandas</li><li>JavaScript</li><li>Leaflet</li></ul>
+            <a class="project-link" href="https://github.com/sar2718/russ-tech-hackathon-map" target="_blank" rel="noopener noreferrer" aria-label="Russ Control Dashboard — source code" data-i18n-aria-label="urbanSourceLabel">
+              <span data-i18n="sourceCode">Source code</span> <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="project-card reveal" id="project-transcription">
+            <div class="project-topline">
+              <span class="project-kind" data-i18n="projectTranscription">Audio transcription</span>
+              <span>05</span>
+            </div>
+            <div>
+              <h3 data-i18n="transcriptionTitle">AI Transcription</h3>
+              <p data-i18n="transcriptionDescription">
+                An Android app built by team 404BNF at Nuclear IT Hack 2026. Transcribes Russian speech on the device, separates the transcript by speaker and supports editing and TXT/JSON export.
+              </p>
+            </div>
+            <ul class="project-stack"><li>Kotlin</li><li>Jetpack Compose</li><li>ONNX Runtime</li><li>GigaAM</li></ul>
+            <a class="project-link" href="https://github.com/sar2718/404BNF" target="_blank" rel="noopener noreferrer" aria-label="AI Transcription — source code" data-i18n-aria-label="transcriptionSourceLabel">
+              <span data-i18n="sourceCode">Source code</span> <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="project-card reveal reveal-delay" id="project-warp">
+            <div class="project-topline">
+              <span class="project-kind" data-i18n="projectAutomation">Linux automation</span>
+              <span>06</span>
+            </div>
+            <div>
+              <h3>WARP Amnezia Manager</h3>
+              <p data-i18n="warpDescription">
+                A Bash tool for creating WARP/AmneziaWG configurations and tracking registrations. Supports access revocation through the Cloudflare API, manually or on expiry.
+              </p>
+            </div>
+            <ul class="project-stack"><li>Bash</li><li>Linux</li><li>Cloudflare API</li><li>jq</li></ul>
+            <a class="project-link" href="https://github.com/sar2718/warp-amnezia-manager" target="_blank" rel="noopener noreferrer" aria-label="WARP Amnezia Manager — source code" data-i18n-aria-label="warpSourceLabel">
               <span data-i18n="sourceCode">Source code</span> <span aria-hidden="true">↗</span>
             </a>
           </article>
@@ -302,7 +354,7 @@
       <section class="section shell" id="education" aria-labelledby="education-title">
         <div class="section-heading reveal">
           <p class="section-index">04 / <span data-i18n="educationLabel">Education</span></p>
-          <h2 id="education-title" data-i18n="educationTitle">Learning by building</h2>
+          <h2 id="education-title" data-i18n="educationTitle">Where I study</h2>
         </div>
 
         <div class="timeline">
@@ -310,12 +362,11 @@
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-meta">
               <span data-i18n="current">Current</span>
-              <small>Moscow</small>
+              <small data-i18n="moscow">Moscow</small>
             </div>
             <div class="timeline-content">
-              <h3>MEPhI</h3>
-              <p class="timeline-role" data-i18n="mephiRole">Systems Analysis and Control</p>
-              <p data-i18n="mephiText">University studies combined with an additional qualification in Software Engineering.</p>
+              <h3><a href="https://mephi.ru/" target="_blank" rel="noopener noreferrer"><span data-i18n="mephiName">MEPhI</span> ↗</a></h3>
+              <p class="timeline-role" data-i18n="mephiRole">Systems Analysis and Control + Software Engineering</p>
             </div>
           </article>
 
@@ -323,12 +374,12 @@
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-meta">
               <span data-i18n="current">Current</span>
-              <small>Peer-to-peer</small>
+              <small data-i18n="peerLearning">Peer learning</small>
             </div>
             <div class="timeline-content">
-              <h3><a href="https://21-school.ru" target="_blank" rel="noopener noreferrer">School 21 by Sber ↗</a></h3>
-              <p class="timeline-role" data-i18n="schoolRole">Backend development path</p>
-              <p data-i18n="schoolText">Project-based training through independent problem solving, peer code reviews and team projects.</p>
+              <h3><a href="https://21-school.ru" target="_blank" rel="noopener noreferrer"><span data-i18n="schoolName">School 21 by Sber</span> ↗</a></h3>
+              <p class="timeline-role" data-i18n="schoolRole">Backend development</p>
+              <p data-i18n="schoolText">I learn by solving problems, reviewing other students’ code and working on team projects.</p>
             </div>
           </article>
         </div>
@@ -337,7 +388,7 @@
       <section class="section shell" id="achievements" aria-labelledby="achievements-title">
         <div class="section-heading reveal">
           <p class="section-index">05 / <span data-i18n="achievementsLabel">Achievements</span></p>
-          <h2 id="achievements-title" data-i18n="achievementsTitle">Hackathons & teamwork</h2>
+          <h2 id="achievements-title" data-i18n="achievementsTitle">Hackathons &amp; teamwork</h2>
         </div>
 
         <div class="achievement-grid">
@@ -346,27 +397,36 @@
               <span>2026</span>
               <span class="achievement-badge" data-i18n="nuclearBadge">3rd place</span>
             </div>
-            <h3>Nuclear IT Hack</h3>
-            <p data-i18n="nuclearText">Raman spectra analysis and biological sample classification.</p>
-            <a class="achievement-link" href="https://github.com/yulia-pecheykina/raman_spectroscopy" target="_blank" rel="noopener noreferrer" aria-label="Nuclear IT Hack — source code" data-i18n-aria-label="nuclearSourceLabel"><span data-i18n="sourceCode">Source code</span><span aria-hidden="true">↗</span></a>
+            <h3 data-i18n="nuclearRamanTitle">Nuclear IT Hack · Raman</h3>
+            <p data-i18n="nuclearText">Raman Spectroscopy: analyzing spectra to classify biological samples.</p>
+            <a class="achievement-link" href="https://github.com/yulia-pecheykina/raman_spectroscopy" target="_blank" rel="noopener noreferrer" aria-label="Nuclear IT Hack — Raman Spectroscopy — source code" data-i18n-aria-label="nuclearSourceLabel"><span data-i18n="sourceCode">Source code</span><span aria-hidden="true">↗</span></a>
           </article>
           <article class="achievement-card reveal reveal-delay">
             <div class="achievement-meta">
               <span>2026</span>
-              <span class="achievement-badge" data-i18n="impulseBadge">AI product</span>
+              <span class="achievement-badge" data-i18n="transcriptionBadge">Android · ASR</span>
             </div>
-            <h3>Impulse T1</h3>
-            <p data-i18n="impulseText">Technical interview platform with candidate and administrator workflows.</p>
-            <a class="achievement-link" href="https://github.com/sar2718/interviewer-os-frontend" target="_blank" rel="noopener noreferrer" aria-label="Impulse T1 — source code" data-i18n-aria-label="impulseSourceLabel"><span data-i18n="sourceCode">Source code</span><span aria-hidden="true">↗</span></a>
+            <h3 data-i18n="nuclearTranscriptionTitle">Nuclear IT Hack · Audio</h3>
+            <p data-i18n="transcriptionText">An Android app that transcribes speech on the device and separates the transcript by speaker.</p>
+            <a class="achievement-link" href="https://github.com/sar2718/404BNF" target="_blank" rel="noopener noreferrer" aria-label="Nuclear IT Hack — AI Transcription — source code" data-i18n-aria-label="nuclearTranscriptionSourceLabel"><span data-i18n="sourceCode">Source code</span><span aria-hidden="true">↗</span></a>
           </article>
           <article class="achievement-card reveal reveal-delay-two">
             <div class="achievement-meta">
               <span>2026</span>
-              <span class="achievement-badge" data-i18n="rvbBadge">Data & maps</span>
+              <span class="achievement-badge" data-i18n="impulseBadge">Frontend prototype</span>
             </div>
-            <h3>RVB × MEPhI</h3>
-            <p data-i18n="rvbText">Advertising surfaces and IP cameras on an interactive map.</p>
-            <a class="achievement-link" href="https://github.com/sar2718/russ-tech-hackathon-map" target="_blank" rel="noopener noreferrer" aria-label="RVB × MEPhI — source code" data-i18n-aria-label="rvbSourceLabel"><span data-i18n="sourceCode">Source code</span><span aria-hidden="true">↗</span></a>
+            <h3 data-i18n="impulseName">Impulse T1</h3>
+            <p data-i18n="impulseText">Interviewer OS: candidate and admin interfaces for a technical interview platform.</p>
+            <a class="achievement-link" href="https://github.com/sar2718/interviewer-os-frontend" target="_blank" rel="noopener noreferrer" aria-label="Impulse T1 — source code" data-i18n-aria-label="impulseSourceLabel"><span data-i18n="sourceCode">Source code</span><span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="achievement-card reveal">
+            <div class="achievement-meta">
+              <span>2026</span>
+              <span class="achievement-badge" data-i18n="rvbBadge">Data &amp; maps</span>
+            </div>
+            <h3 data-i18n="rwbName">RWB × MEPhI</h3>
+            <p data-i18n="rvbText">Russ Control Dashboard: mapping outdoor advertising displays and estimating camera coverage.</p>
+            <a class="achievement-link" href="https://github.com/sar2718/russ-tech-hackathon-map" target="_blank" rel="noopener noreferrer" aria-label="RWB × MEPhI — source code" data-i18n-aria-label="rvbSourceLabel"><span data-i18n="sourceCode">Source code</span><span aria-hidden="true">↗</span></a>
           </article>
         </div>
       </section>
@@ -376,10 +436,10 @@
           <div>
             <p class="section-index">06 / <span data-i18n="contactLabel">Contact</span></p>
             <h2 id="contact-title" data-i18n="contactTitle">Get in touch</h2>
-            <p data-i18n="contactText">Have an idea or a task? Send me a message.</p>
+            <p data-i18n="contactText">Have a project in mind or want to work together? Email me or message me on Telegram.</p>
           </div>
           <div class="contact-actions">
-            <a href="mailto:sultanoveduard2718@gmail.com"><span>Email</span><strong>sultanoveduard2718@gmail.com</strong><span aria-hidden="true">↗</span></a>
+            <a href="mailto:sultanoveduard2718@gmail.com"><span data-i18n="emailLabel">Email</span><strong>sultanoveduard2718@gmail.com</strong><span aria-hidden="true">↗</span></a>
             <a href="https://t.me/sar2718" target="_blank" rel="noopener noreferrer"><span>Telegram</span><strong>@sar2718</strong><span aria-hidden="true">↗</span></a>
             <a href="https://github.com/sar2718" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>@sar2718</strong><span aria-hidden="true">↗</span></a>
           </div>
@@ -389,7 +449,7 @@
 
     <footer class="site-footer">
       <div class="shell footer-inner">
-        <span>© <span id="current-year">2026</span> Eduard Sultanov</span>
+        <span>© <span id="current-year">2026</span> <span data-i18n="heroIdentity">Eduard Sultanov</span></span>
         <a href="#top"><span data-i18n="backToTop">Back to top</span> ↑</a>
       </div>
     </footer>
